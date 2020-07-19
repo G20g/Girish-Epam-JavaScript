@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Registeration Form</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4 rounded-lg border p-0 mt-3">
+					<div class="bg-primary d-flex text-white p-2 justify-content-between">
+						<div class="pl-2">
+							<h3 class="rounded-circle border"><span class="material-icons">school</span></h3>
+						</div>
+						<h3>Registeration Form</h3>
+						<div class="pr-2"><h3>&times;</h3></div>
+					</div>
+					<div class="p-3">
+						<form>
+							<div class="input-group mb-3 mt-2">
+								<input
+									type="text"
+									class="form-control"
+									id="lb1"
+									name="fname"
+									placeholder="Enter your first name"
+									onblur="validatefname();"
+								/><span id="msg1"></span>
+							</div>
+							<div class="input-group mb-3 mt-2">
+								<input
+									type="text"
+									class="form-control"
+									id="lb3"
+									name="lname"
+									placeholder="Enter your last name"
+									onblur="validatelname();"
+								/><span id="msg"></span>
+							</div>
+							<div class="input-group mb-3 mt-2">
+								<input type="date" id="lb4" name="dob" />
+							</div>
+							<div class="input-group mb-3 mt-2">
+								<input
+									type="email"
+									class="form-control"
+									id="lb5"
+									name="mail"
+									onblur="validateemailid();"
+									placeholder="mail@example.com"
+								/>
+								<span id="msg2"></span>
+							</div>
+							<div class="input-group mb-3 mt-2">
+								<input
+									type="number"
+									id="lb6"
+									name="num"
+									placeholder="xxxxxxxxxx"
+									onblur="validatenumber();"
+								/><span id="msg3"></span>
+							</div>
+
+							<div class="input-group mb-3">
+								<input type="password" class="form-control" placeholder="password" />
+							</div>
+							<div class="pt-3">
+								<button type="submit" class="btn btn-primary btn-block">Register</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-sm-4"></div>
+			</div>
+		</div>
+	</body>
+</html>
